@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    margin: auto;
+    width: 400px;
+}
+
+
+.item {
+    display: flex;
+    margin: 10px 0;
+}
+.button {
+    background: #00a0c0;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+#content {
+    width: 70%;
+    margin: 0;
+    margin-right: 0px;
+    border: 1px solid #dadada;
+    padding: 8px 10px;
+    margin-right: 12px;
+}

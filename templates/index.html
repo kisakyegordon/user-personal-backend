@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> User Personal</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h3 style="text-align: center"> User Personal Information</h3>
+    <div class="content">
+       <div class="item"><h4 style="margin: 0"> Name </h4>: {{ user.name }}</div>
+       <div class="item"><h4 style="margin: 0"> SurName </h4>: {{ user.surname }}</div>
+       <div class="item"><h4 style="margin: 0"> D.O.B </h4>: {{ user.dob }}</div>
+       <div class="item"><h4 style="margin: 0"> Phone </h4>: {{ user.phone }}</div>
+       <div class="item"><h4 style="margin: 0"> Address </h4>: {{ user.address }}</div>
+       <div class="item"><h4 style="margin: 0"> Time Zone </h4>: {{ user.timezone }}</div>
+
+    <form action="/user/{{user.id}}" method="POST">
+        <div class="item">
+            <input type="text" name="content" id="content" value="{{ user.address }}">
+            <input type="submit" value="Update Address" class="button">
+        </div>
+    </form>
+    </div>
+</div>
+{% endblock %}

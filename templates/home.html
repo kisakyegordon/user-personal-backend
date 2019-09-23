@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> User Personal</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h3 style="text-align: center"> Welcome To The User Personal Information Database</h3>
+    <div class="content">
+       <div class="item"><h4 style="margin: 0">Find User By Id </h4></div>
+
+    <form action="/" method="POST">
+        <div class="item">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Find User" class="button">
+        </div>
+    </form>
+    </div>
+</div>
+{% endblock %}
